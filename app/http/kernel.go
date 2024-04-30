@@ -14,5 +14,6 @@ type Kernel struct {
 func (kernel Kernel) Middleware() []http.Middleware {
 	return []http.Middleware{
 		middleware.Status(),
+		middleware.AccessLog(),
 	}
 }

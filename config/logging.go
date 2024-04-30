@@ -37,6 +37,12 @@ func init() {
 				"days":   7,
 				"print":  true,
 			},
+			"access": map[string]any{
+				"driver": "single",
+				"path":   "storage/logs/access.log",
+				"level":  "info",
+				"print":  true,
+			},
 		},
 	})
 }
