@@ -9,6 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
+        goos: [ freebsd ]
         goarch: [ amd64, arm64 ]
       fail-fast: true
     steps:
